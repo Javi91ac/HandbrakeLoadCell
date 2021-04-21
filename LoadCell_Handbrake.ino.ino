@@ -1,12 +1,12 @@
 // Ebrake with loadcell
 // 
-// 
-// Tested and working in ASSETTO CORSA
 // original handbrake code AMSTUDIO 
 // original load cell scale code by robtillaart
 // edited for loadcell by backcountrybum
-// 11.27.2020
-// This uses a 20kg loadcell, an arduino micro and a random handbrake with the loadcell put on the back
+// 
+// Edit for loadcell NA151 200Kg By Javi91ac thx AMSTUDIO, robtillart and backcounttrybum
+// 21.04.2021
+
 
 
 #include <Joystick.h>
