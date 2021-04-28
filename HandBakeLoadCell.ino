@@ -26,7 +26,7 @@ volatile float f;
 
 void setup()
 
-{Serial.begin(115200);
+{Serial.begin(9600);
   // Serial.println(__FILE__);
   // Serial.print("LIBRARY VERSION: ");
   // Serial.println(HX711_LIB_VERSION);
@@ -47,7 +47,7 @@ void setup()
 void loop()
 
 {int pot = scale.get_units(1);
-int mapped = map(pot,0,1023,0,255);
+int mapped = map(pot,0,1023,0,200);
 {Joystick.setThrottle(mapped);}
 Serial.println(pot);
 }
