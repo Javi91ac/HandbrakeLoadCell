@@ -37,8 +37,8 @@ void setup()
   // TODO find a nice solution for this calibration..
   // loadcell factor 20 KG
   // scale.set_scale(127.15);
-  // loadcell factor 5 KG
   scale.set_gain(128);
+  // change scale.set_scale for oyu load cell
   scale.set_scale(40);
   // reset the scale to zero = 0
   scale.tare();
