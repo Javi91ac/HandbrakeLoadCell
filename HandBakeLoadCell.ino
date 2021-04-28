@@ -21,7 +21,7 @@ HX711 scale;
 uint8_t dataPin = 6;
 uint8_t clockPin = 5;
 
-uint32_t start, stop;
+//uint32_t start, stop;
 volatile float f;
 
 void setup()
@@ -38,8 +38,8 @@ void setup()
   // loadcell factor 20 KG
   // scale.set_scale(127.15);
   // loadcell factor 5 KG
-  scale.set_gain(64);
-  scale.set_scale(35);
+  scale.set_gain(128);
+  scale.set_scale(40);
   // reset the scale to zero = 0
   scale.tare();
    Joystick.begin();}
@@ -47,7 +47,7 @@ void setup()
 void loop()
 
 {int pot = scale.get_units(1);
-int mapped = map(pot,0,2500,0,255);
+int mapped = map(pot,0,1023,0,255);
 {Joystick.setThrottle(mapped);}
 Serial.println(pot);
 }
